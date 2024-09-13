@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day4 | Bulma CSS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style>
+        #product-container {
+  min-height: calc(100vh - 215px - 168px);
+}
+
+.description {
+  display: none;
+}
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar is-light" 
+    role="navigation" 
+    aria-label="main navigation"
+    >
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                Die<strong>Borussen</strong>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="#">Products</a>
+                <a class="navbar-item" href="#">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero is-black">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">Welcome to <span>Die</span><strong class="has-text-warning has-text-weight-bold">Borussen</strong> Shop</h1>
+                <h2 class="subtitle">Find your favorite jersey here!</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product List -->
+    <section class="section has-background-warning" id="product-container">
+        <div class="container">
+            <h2 class="title is-2">Our Products</h2>
+            <div class="columns is-mobile is-multiline">
+                <!-- Product 1 -->
+                <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="images/products/jerseys/home2425.jpg" alt="Product Image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-4">BVB Home Jersey 24/25</p>
+                            <p class="subtitle is-6">Rp 1.532.160</p>
+                        </div>
+                        <button class="button is-black is-fullwidth">ADD TO CART</a>
+                        </footer>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="images/products/jerseys/away2425.jpg" alt="Product Image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-4">BVB Away Jersey 24/25</p>
+                            <p class="subtitle is-6">Rp 1.532.160</p>
+                        </div>
+                        <button class="button is-black is-fullwidth">ADD TO CART</a>
+                        </footer>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="images/products/souvenirs/bvbslippers.jpg" alt="Product Image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-4">BVB Slipper Logo Neon</p>
+                            <p class="subtitle is-6">Rp 425.725</p>
+                        </div>
+                        <button class="button is-black is-fullwidth">ADD TO CART</a>
+                        </footer>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="images/products/souvenirs/bvbbadge.jpg" alt="Product Image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-4">BVB Badge(Set Of 5)</p>
+                            <p class="subtitle is-6">Rp 102.174</p>
+                        </div>
+                        <button class="button is-black is-fullwidth">ADD TO CART</a>
+                        </footer>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>&copy; 2024 <span>Die</span><strong class="has-text-black has-text-weight-bold">Borussen</strong> Shop</h1> by <a href="#">Zakky Mubaarak</a>.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

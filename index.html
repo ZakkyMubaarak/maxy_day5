@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day5 | Portfolio </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+        }
+        .navbar {
+            border-bottom: 1px solid #eaeaea;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .hero {
+            background: linear-gradient(135deg, #6c63ff, #3d8bfd);
+            color: #fff;
+            padding: 5rem 0;
+            text-align: center;
+        }
+        .hero img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .section-title {
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: #3d8bfd;
+            margin: 0 auto;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .navbar-item.is-active {
+            font-weight: bold;
+            color: #3d8bfd;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar is-fixed-top is-light">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="#" class="navbar-item has-text-weight-bold text-ligh is-size-4">Zakky Mubaarak</a>
+                <button class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-start">
+                    <a href="#home" class="navbar-item">Beranda</a>
+                    <a href="#about" class="navbar-item">Tentang</a>
+                    <a href="#portfolio" class="navbar-item">Portfolio</a>
+                    <a href="#contact" class="navbar-item">Kontak</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+ <section class="hero" id="home">
+    <div class="container has-text-centered">
+        <figure class="image is-inline-block" style="max-width: 250px; margin-top: 0; margin-bottom: 20px;">
+            <img src="img/profile.png" alt="Your Photo" style="object-fit: cover; height: 250px; width: 250px; border-radius: 50%; margin-top: 0;">
+        </figure>
+        <h1 class="title is-2" style="color: white;">Selamat Datang, Saya Zakky Mubaarak</h1>
+        <p class="subtitle" style="color: white;">Mahasiswa Aktif dari Prodi Sistem Informasi</p>
+        <a href="#portfolio" class="button is-link is-light is-outlined mt-4">See My Work</a>
+    </div>
+</section>
+
+    
+
+<!-- About Section -->
+<section class="section" id="about">
+    <div class="container">
+        <h2 class="title is-3 has-text-centered section-title">Tentang Saya</h2>
+        <div class="columns is-centered">
+            <div class="column is-6" data-aos="fade-up">
+                <h3 class="title is-4">Zakky Mubaarak</h3>
+                <p class="has-text-justified">Zakky Mubaarak adalah seorang mahasiswa dari Program Studi Sistem Informasi di 
+                    Universitas Bina Sarana Informatika (UBSI) Ciledug. Dengan latar belakang 
+                    pendidikan yang kuat dalam sistem informasi, Saya memiliki pengetahuan yang 
+                    mendalam dalam pengembangan perangkat lunak dan desain sistem. Saat ini, 
+                    Saya tengah fokus pada pengembangan keterampilan dalam backend development, 
+                    termasuk pembuatan dan pengelolaan API serta autentikasi menggunakan JWT. 
+                    Selain itu, Saya juga memiliki pengalaman dalam pengembangan web dengan 
+                    menggunakan HTML, CSS, dan framework Bulma. Dengan semangat untuk terus 
+                    belajar dan berkembang, Saya berkomitmen untuk mencapai keahlian yang lebih 
+                    tinggi di bidang teknologi informasi dan memberikan kontribusi yang 
+                    signifikan dalam industri ini.
+
+                </p>
+                <div class="buttons mt-4">
+                    <a href="https://www.instagram.com/zakkym11__" class="button is-link is-light is-outlined">
+                        <span class="icon"><i class="fa-brands fa-instagram"></i></span>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://github.com/zakkymubaarak" class="button is-link is-light is-outlined">
+                        <span class="icon"><i class="fa-brands fa-github"></i></span>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+br
+
+    <!-- Portfolio Section -->
+    <section class="section" id="portfolio">
+        <div class="container">
+            <h2 class="title is-3 has-text-centered section-title">Portfolio</h2>
+            <div class="columns is-multiline">
+                <div class="column is-one-third" data-aos="fade-up">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="img/project/localfest.png" alt="Project 1" />
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-5">LocalFest</p>
+                            <p>LOCALFEST adalah festival untuk memunculkan potensi lokal terbesar dari generasi muda kreatif Indonesia, 
+                                mulai dari fashion pop up store, pameran seni, musik dan talk show, hingga kuliner.Dimulai pada tahun 2013 hingga saat ini.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third" data-aos="fade-up">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="img/project/dieborussen.png" alt="Project 2" />
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-5">DieBorussen</p>
+                            <p>DieBorussen adalah toko merchandise Borussia Dortmund yang menawarkan berbagai produk eksklusif terkait 
+                                klub sepak bola terkenal tersebut. Di sini, penggemar Borussia Dortmund dapat menemukan berbagai macam 
+                                merchandise.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="title is-3 has-text-centered section-title">Kontak</h2>
+            <div class="columns is-centered">
+                <div class="column is-one-third">
+                    <div class="box">
+                        <span class="icon is-large"><i class="fa-solid fa-envelope"></i></span>
+                        <h4 class="title is-5">Email</h4>
+                        <p>zakkymubaarak@gmail.com</p>
+                    </div>
+                </div>
+                <div class="column is-one-third">
+                    <div class="box">
+                        <span class="icon is-large"><i class="fa-solid fa-phone"></i></span>
+                        <h4 class="title is-5">Nomor Handphone</h4>
+                        <p>089684982580</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="content">
+            <p>© 2024 Zakky Mubaarak. All Rights Reserved. <a href="https://github.com/zakkymubaarak">GitHub</a> | <a href="https://www.instagram.com/zakkym11__">instagram</a></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/js/bulma.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            if (navbarBurgers.length > 0) {
+                navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+                        const target = document.getElementById(el.dataset.target);
+                        el.classList.toggle('is-active');
+                        target.classList.toggle('is-active');
+                    });
+                });
+            }
+        });
+
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".navbar-item");
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('is-active');
+                        if (link.getAttribute('href').substring(1) === entry.target.id) {
+                            link.classList.add('is-active');
+                        }
+                    });
+                }
+            });
+        }, { threshold: 0.7 });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
